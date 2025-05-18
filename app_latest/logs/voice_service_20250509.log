@@ -1,0 +1,729 @@
+2025-05-09 03:41:36 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 03:41:38 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 03:41:46 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 03:42:10 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 03:42:10 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_7da80702-bda9-44db-a99e-33bdcfab7914_1746733330.wav
+2025-05-09 03:42:10 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_7da80702-bda9-44db-a99e-33bdcfab7914_1746733330.wav
+2025-05-09 03:42:10 - services.voice - INFO - Loading Vosk model from: D:\PyCharm Project\CCF\app_latest\services\vosk-model-small-cn-0.22
+2025-05-09 03:42:10 - services.voice - INFO - Reading audio file content
+2025-05-09 03:42:10 - services.voice - INFO - Attempting to read file: http://localhost:8000/static/audio/record_7da80702-bda9-44db-a99e-33bdcfab7914_1746733330.wav
+2025-05-09 03:42:10 - services.voice - INFO - Converted local URL to path: /static/audio/record_7da80702-bda9-44db-a99e-33bdcfab7914_1746733330.wav
+2025-05-09 03:42:10 - services.voice - INFO - Current directory: D:\PyCharm Project\CCF\app_latest
+2025-05-09 03:42:10 - services.voice - INFO - Full file path: D:\PyCharm Project\CCF\app_latest\static/audio/record_7da80702-bda9-44db-a99e-33bdcfab7914_1746733330.wav
+2025-05-09 03:42:10 - services.voice - INFO - File size: 293804 bytes
+2025-05-09 03:42:10 - services.voice - INFO - Reading file content...
+2025-05-09 03:42:10 - services.voice - INFO - Successfully read 293804 bytes
+2025-05-09 03:42:10 - services.voice - INFO - Validating audio file type
+2025-05-09 03:42:10 - services.voice - INFO - Audio file type: audio/wav
+2025-05-09 03:42:10 - services.voice - INFO - Generated unique filename: train_6da02352-5831-44ed-a41f-72b09821bde6_1746733330.wav
+2025-05-09 03:42:10 - services.voice - INFO - Importing pydub
+2025-05-09 03:42:10 - services.voice - INFO - Converting audio data to AudioSegment
+2025-05-09 03:42:10 - services.voice - INFO - Processing WAV file
+2025-05-09 03:42:10 - services.voice - INFO - Converting audio to 16kHz mono
+2025-05-09 03:42:10 - services.voice - INFO - Exporting to WAV format
+2025-05-09 03:42:10 - services.voice - INFO - Audio processing completed successfully
+2025-05-09 03:42:10 - services.voice - INFO - Creating speech recognizer
+2025-05-09 03:42:11 - services.voice - INFO - Processing audio data with Vosk
+2025-05-09 03:42:12 - services.voice - INFO - Successfully transcribed text: 你今年几岁了
+2025-05-09 03:42:12 - services.voice - INFO - Transcribed text: 你今年几岁了
+2025-05-09 03:42:12 - services.voice - INFO - Saving chat to database
+2025-05-09 03:42:12 - services.voice - INFO - Getting AI response
+2025-05-09 03:42:19 - services.voice - INFO - AI response: 我是 **DeepSeek Chat**，由深度求索公司创造。我的知识截止到 **2024年7月**，如果从那时算起，我大概 **不到1岁**！🎂  
+
+不过，我的知识储备可是相当丰富的，可以帮你解答各种问题！😊 你有什么想聊的吗？
+2025-05-09 03:42:19 - services.voice - INFO - Saving AI response to database
+2025-05-09 03:42:19 - services.voice - INFO - Initializing OpenAI client
+2025-05-09 03:42:20 - services.voice - INFO - Generating speech with model: FunAudioLLM/CosyVoice2-0.5B, voice: speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc
+2025-05-09 03:42:20 - services.voice - INFO - Request parameters: model=FunAudioLLM/CosyVoice2-0.5B, voice=speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc, input_length=116
+2025-05-09 03:42:20 - services.voice - INFO - API Key: sk-swldh...
+2025-05-09 03:42:20 - services.voice - INFO - Base URL: https://api.siliconflow.cn/v1
+2025-05-09 03:42:20 - services.voice - INFO - Using test text: 你好，这是一个测试。
+2025-05-09 03:42:20 - services.voice - INFO - Request parameters: {'model': 'FunAudioLLM/CosyVoice2-0.5B', 'voice': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'input': '你好，这是一个测试。', 'response_format': 'mp3'}
+2025-05-09 03:42:20 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 03:42:20 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 03:42:20 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 03:42:20 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "你好，这是一个测试。", "response_format": "mp3"}
+2025-05-09 03:42:23 - services.voice - INFO - Response Status Code: 500
+2025-05-09 03:42:23 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 19:42:21 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 03:42:23 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 03:42:23 - services.voice - ERROR - Error Code: 50500
+2025-05-09 03:42:23 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 03:42:23 - services.voice - ERROR - Error Data: None
+2025-05-09 03:42:23 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 367, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:23 - services.voice - ERROR - API call failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:23 - services.voice - ERROR - API response: None
+2025-05-09 03:42:23 - services.voice - WARNING - Attempt 1 failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:23 - services.voice - INFO - Waiting 1 seconds before next attempt
+2025-05-09 03:42:24 - services.voice - INFO - Using test text: 你好，这是一个测试。
+2025-05-09 03:42:24 - services.voice - INFO - Request parameters: {'model': 'FunAudioLLM/CosyVoice2-0.5B', 'voice': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'input': '你好，这是一个测试。', 'response_format': 'mp3'}
+2025-05-09 03:42:24 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 03:42:24 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 03:42:24 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 03:42:24 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "你好，这是一个测试。", "response_format": "mp3"}
+2025-05-09 03:42:27 - services.voice - INFO - Response Status Code: 500
+2025-05-09 03:42:27 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 19:42:25 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 03:42:27 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 03:42:27 - services.voice - ERROR - Error Code: 50500
+2025-05-09 03:42:27 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 03:42:27 - services.voice - ERROR - Error Data: None
+2025-05-09 03:42:27 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 367, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:27 - services.voice - ERROR - API call failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:27 - services.voice - ERROR - API response: None
+2025-05-09 03:42:27 - services.voice - WARNING - Attempt 2 failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:27 - services.voice - INFO - Waiting 2 seconds before next attempt
+2025-05-09 03:42:29 - services.voice - INFO - Using test text: 你好，这是一个测试。
+2025-05-09 03:42:29 - services.voice - INFO - Request parameters: {'model': 'FunAudioLLM/CosyVoice2-0.5B', 'voice': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'input': '你好，这是一个测试。', 'response_format': 'mp3'}
+2025-05-09 03:42:29 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 03:42:29 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 03:42:29 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 03:42:29 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "你好，这是一个测试。", "response_format": "mp3"}
+2025-05-09 03:42:32 - services.voice - INFO - Response Status Code: 500
+2025-05-09 03:42:32 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 19:42:30 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 03:42:32 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 03:42:32 - services.voice - ERROR - Error Code: 50500
+2025-05-09 03:42:32 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 03:42:32 - services.voice - ERROR - Error Data: None
+2025-05-09 03:42:32 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 367, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:32 - services.voice - ERROR - API call failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:32 - services.voice - ERROR - API response: None
+2025-05-09 03:42:32 - services.voice - WARNING - Attempt 3 failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:32 - services.voice - ERROR - All 3 attempts failed. Last error: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:32 - services.voice - ERROR - Error during speech generation: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 367, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 450, in generate_audio
+    raise last_error
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 433, in generate_audio
+    raise api_error
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 429, in generate_audio
+    raise HTTPException(500, f"API调用失败: {str(e)}")
+fastapi.exceptions.HTTPException: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:42:32 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音生成失败: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 03:44:06 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:01:23 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:01:24 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:02:28 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 04:02:28 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_58d92e45-7f88-4221-a335-bf65fd344c20_1746734548.wav
+2025-05-09 04:02:28 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_58d92e45-7f88-4221-a335-bf65fd344c20_1746734548.wav
+2025-05-09 04:02:28 - services.voice - INFO - Loading Vosk model from: D:\PyCharm Project\CCF\app_latest\services\vosk-model-small-cn-0.22
+2025-05-09 04:02:28 - services.voice - INFO - Reading audio file content
+2025-05-09 04:02:28 - services.voice - INFO - Attempting to read file: http://localhost:8000/static/audio/record_58d92e45-7f88-4221-a335-bf65fd344c20_1746734548.wav
+2025-05-09 04:02:28 - services.voice - INFO - Converted local URL to path: /static/audio/record_58d92e45-7f88-4221-a335-bf65fd344c20_1746734548.wav
+2025-05-09 04:02:28 - services.voice - INFO - Current directory: D:\PyCharm Project\CCF\app_latest
+2025-05-09 04:02:28 - services.voice - INFO - Full file path: D:\PyCharm Project\CCF\app_latest\static/audio/record_58d92e45-7f88-4221-a335-bf65fd344c20_1746734548.wav
+2025-05-09 04:02:28 - services.voice - INFO - File size: 374444 bytes
+2025-05-09 04:02:28 - services.voice - INFO - Reading file content...
+2025-05-09 04:02:28 - services.voice - INFO - Successfully read 374444 bytes
+2025-05-09 04:02:28 - services.voice - INFO - Validating audio file type
+2025-05-09 04:02:28 - services.voice - INFO - Audio file type: audio/wav
+2025-05-09 04:02:28 - services.voice - INFO - Generated unique filename: train_89ca7801-8848-46f0-b830-2780e6bf67b9_1746734548.wav
+2025-05-09 04:02:28 - services.voice - INFO - Importing pydub
+2025-05-09 04:02:28 - services.voice - INFO - Converting audio data to AudioSegment
+2025-05-09 04:02:28 - services.voice - INFO - Processing WAV file
+2025-05-09 04:02:28 - services.voice - INFO - Converting audio to 16kHz mono
+2025-05-09 04:02:28 - services.voice - INFO - Exporting to WAV format
+2025-05-09 04:02:28 - services.voice - INFO - Audio processing completed successfully
+2025-05-09 04:02:28 - services.voice - INFO - Creating speech recognizer
+2025-05-09 04:02:29 - services.voice - INFO - Processing audio data with Vosk
+2025-05-09 04:02:31 - services.voice - INFO - Successfully transcribed text: 你今年几岁啦
+2025-05-09 04:02:31 - services.voice - INFO - Transcribed text: 你今年几岁啦
+2025-05-09 04:02:31 - services.voice - INFO - Saving chat to database
+2025-05-09 04:02:31 - services.voice - INFO - Getting AI response
+2025-05-09 04:02:38 - services.voice - INFO - AI response: 哈哈，我其实是个AI助手，没有真实的年龄概念哦～不过如果从技术角度算的话，我的知识库更新到2023年，你可以理解为我的“出生年份”是那之前呢！😄 需要帮忙的话，我随时都在～
+2025-05-09 04:02:38 - services.voice - INFO - Saving AI response to database
+2025-05-09 04:02:38 - services.voice - INFO - Initializing OpenAI client
+2025-05-09 04:02:38 - services.voice - INFO - Generating speech with model: FunAudioLLM/CosyVoice2-0.5B, voice: speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc
+2025-05-09 04:02:38 - services.voice - INFO - Request parameters: model=FunAudioLLM/CosyVoice2-0.5B, voice=speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc, input_length=86
+2025-05-09 04:02:38 - services.voice - INFO - API Key: sk-swldh...
+2025-05-09 04:02:38 - services.voice - INFO - Base URL: https://api.siliconflow.cn/v1
+2025-05-09 04:02:38 - services.voice - INFO - Using test text: 你好，这是一个测试。
+2025-05-09 04:02:38 - services.voice - INFO - Request parameters: {'model': 'FunAudioLLM/CosyVoice2-0.5B', 'voice': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'input': '你好，这是一个测试。', 'response_format': 'mp3'}
+2025-05-09 04:02:38 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 04:02:38 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 04:02:38 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 04:02:38 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "你好，这是一个测试。", "response_format": "mp3"}
+2025-05-09 04:02:40 - services.voice - INFO - Response Status Code: 500
+2025-05-09 04:02:40 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 20:02:41 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 04:02:40 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 04:02:40 - services.voice - ERROR - Error Code: 50500
+2025-05-09 04:02:40 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 04:02:40 - services.voice - ERROR - Error Data: None
+2025-05-09 04:02:40 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 367, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:40 - services.voice - ERROR - API call failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:40 - services.voice - ERROR - API response: None
+2025-05-09 04:02:40 - services.voice - WARNING - Attempt 1 failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:40 - services.voice - INFO - Waiting 1 seconds before next attempt
+2025-05-09 04:02:41 - services.voice - INFO - Using test text: 你好，这是一个测试。
+2025-05-09 04:02:41 - services.voice - INFO - Request parameters: {'model': 'FunAudioLLM/CosyVoice2-0.5B', 'voice': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'input': '你好，这是一个测试。', 'response_format': 'mp3'}
+2025-05-09 04:02:41 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 04:02:41 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 04:02:41 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 04:02:41 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "你好，这是一个测试。", "response_format": "mp3"}
+2025-05-09 04:02:43 - services.voice - INFO - Response Status Code: 500
+2025-05-09 04:02:43 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 20:02:44 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 04:02:43 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 04:02:43 - services.voice - ERROR - Error Code: 50500
+2025-05-09 04:02:43 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 04:02:43 - services.voice - ERROR - Error Data: None
+2025-05-09 04:02:43 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 367, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:43 - services.voice - ERROR - API call failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:43 - services.voice - ERROR - API response: None
+2025-05-09 04:02:43 - services.voice - WARNING - Attempt 2 failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:43 - services.voice - INFO - Waiting 2 seconds before next attempt
+2025-05-09 04:02:45 - services.voice - INFO - Using test text: 你好，这是一个测试。
+2025-05-09 04:02:45 - services.voice - INFO - Request parameters: {'model': 'FunAudioLLM/CosyVoice2-0.5B', 'voice': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'input': '你好，这是一个测试。', 'response_format': 'mp3'}
+2025-05-09 04:02:45 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 04:02:45 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 04:02:45 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 04:02:45 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "你好，这是一个测试。", "response_format": "mp3"}
+2025-05-09 04:02:47 - services.voice - INFO - Response Status Code: 500
+2025-05-09 04:02:47 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 20:02:48 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 04:02:47 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 04:02:47 - services.voice - ERROR - Error Code: 50500
+2025-05-09 04:02:47 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 04:02:47 - services.voice - ERROR - Error Data: None
+2025-05-09 04:02:47 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 367, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:47 - services.voice - ERROR - API call failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:47 - services.voice - ERROR - API response: None
+2025-05-09 04:02:47 - services.voice - WARNING - Attempt 3 failed: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:47 - services.voice - ERROR - All 3 attempts failed. Last error: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:47 - services.voice - ERROR - Error during speech generation: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 367, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 450, in generate_audio
+    raise last_error
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 433, in generate_audio
+    raise api_error
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 429, in generate_audio
+    raise HTTPException(500, f"API调用失败: {str(e)}")
+fastapi.exceptions.HTTPException: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:02:47 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音生成失败: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:12:28 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:12:30 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:12:39 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:12:40 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:14:05 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:14:09 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:14:10 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:14:11 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:14:11 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:14:16 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:14:18 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:14:39 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 04:14:39 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_2a06f54d-3b7b-41e7-93c0-0141bad4ae24_1746735279.wav
+2025-05-09 04:14:39 - services.voice - ERROR - Unexpected error in generate_audio: 'VoiceService' object has no attribute 'transcribe_audio_file'
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 218, in generate_audio
+    final_result = await self.transcribe_audio_file(audio_url)  # 识别成文字
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'VoiceService' object has no attribute 'transcribe_audio_file'
+2025-05-09 04:19:17 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:21:06 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:21:09 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:21:09 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:21:11 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:21:11 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:21:19 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:21:20 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:22:03 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 04:22:03 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_0eb9962d-7f39-4bb3-9e6b-65ebae626546_1746735723.wav
+2025-05-09 04:22:03 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_0eb9962d-7f39-4bb3-9e6b-65ebae626546_1746735723.wav
+2025-05-09 04:22:03 - services.voice - ERROR - Audio file not found: D:\PyCharm Project\CCF\app_latest\http://localhost:8000/static/audio/record_0eb9962d-7f39-4bb3-9e6b-65ebae626546_1746735723.wav
+2025-05-09 04:22:03 - services.voice - ERROR - Transcription error: 404: 音频文件不存在: http://localhost:8000/static/audio/record_0eb9962d-7f39-4bb3-9e6b-65ebae626546_1746735723.wav
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 364, in transcribe_audio_file
+    raise HTTPException(status_code=404, detail=f"音频文件不存在: {audio_url}")
+fastapi.exceptions.HTTPException: 404: 音频文件不存在: http://localhost:8000/static/audio/record_0eb9962d-7f39-4bb3-9e6b-65ebae626546_1746735723.wav
+2025-05-09 04:22:03 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音识别失败: 404: 音频文件不存在: http://localhost:8000/static/audio/record_0eb9962d-7f39-4bb3-9e6b-65ebae626546_1746735723.wav
+2025-05-09 04:24:20 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:24:24 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:24:24 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:24:25 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:24:25 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:24:27 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:24:28 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:24:45 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 04:24:45 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_e835ab78-4069-470c-a7fa-831a01b36980_1746735885.wav
+2025-05-09 04:24:45 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_e835ab78-4069-470c-a7fa-831a01b36980_1746735885.wav
+2025-05-09 04:24:46 - services.voice - ERROR - Vosk model not found at: D:\PyCharm Project\CCF\app_latest\services\vosk-model-small-cn
+2025-05-09 04:24:46 - services.voice - ERROR - Transcription error: 500: 语音识别模型未找到
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 397, in transcribe_audio_file
+    raise HTTPException(status_code=500, detail="语音识别模型未找到")
+fastapi.exceptions.HTTPException: 500: 语音识别模型未找到
+2025-05-09 04:24:46 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音识别失败: 500: 语音识别模型未找到
+2025-05-09 04:28:35 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:28:36 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:28:55 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 04:28:55 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_4676d8cd-52ea-48cd-bb02-f435f63c09f4_1746736135.wav
+2025-05-09 04:28:55 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_4676d8cd-52ea-48cd-bb02-f435f63c09f4_1746736135.wav
+2025-05-09 04:28:58 - services.voice - WARNING - Failed to delete temporary file D:\PyCharm Project\CCF\app_latest\static\temp\temp_8053eac9-17ce-4520-9e12-002648f11510.wav: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\PyCharm Project\\CCF\\app_latest\\static\\temp\\temp_8053eac9-17ce-4520-9e12-002648f11510.wav'
+2025-05-09 04:28:58 - services.voice - INFO - Transcription completed: 你 今年 几岁 了
+2025-05-09 04:28:59 - services.voice - INFO - Transcribed text: 你 今年 几岁 了
+2025-05-09 04:28:59 - services.voice - INFO - Saving chat to database
+2025-05-09 04:28:59 - services.voice - INFO - Getting AI response
+2025-05-09 04:29:06 - services.voice - INFO - AI response: 我是一个人工智能助手，没有年龄的概念哦！不过如果你好奇我的“出生”时间，我的知识截止到2023年，之后的知识我就不知道啦～ 你可以把我当成一个永远“当前版本”的智能工具！ 😊  
+
+有什么其他问题想聊的吗？
+2025-05-09 04:29:06 - services.voice - INFO - Saving AI response to database
+2025-05-09 04:29:06 - services.voice - INFO - Request parameters: {'model': 'FunAudioLLM/CosyVoice2-0.5B', 'voice': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'input': '我是一个人工智能助手，没有年龄的概念哦！不过如果你好奇我的“出生”时间，我的知识截止到2023年，之后的知识我就不知道啦～ 你可以把我当成一个永远“当前版本”的智能工具！ 😊  \n\n有什么其他问题想聊的吗？', 'response_format': 'mp3'}
+2025-05-09 04:29:06 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 04:29:06 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 04:29:06 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-ijbcb...'}
+2025-05-09 04:29:06 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "我是一个人工智能助手，没有年龄的概念哦！不过如果你好奇我的“出生”时间，我的知识截止到2023年，之后的知识我就不知道啦～ 你可以把我当成一个永远“当前版本”的智能工具！ 😊  \n\n有什么其他问题想聊的吗？", "response_format": "mp3"}
+2025-05-09 04:29:07 - services.voice - INFO - Response Status Code: 403
+2025-05-09 04:29:07 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 20:29:08 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '57', 'connection': 'keep-alive'}
+2025-05-09 04:29:07 - services.voice - ERROR - API Error Response: {"code": 30000, "message": "Illegal operation.", "data": null}
+2025-05-09 04:29:07 - services.voice - ERROR - Error Code: 30000
+2025-05-09 04:29:07 - services.voice - ERROR - Error Message: Illegal operation.
+2025-05-09 04:29:07 - services.voice - ERROR - Error Data: None
+2025-05-09 04:29:07 - services.voice - ERROR - Unexpected error during API call: 403: API error: {'code': 30000, 'message': 'Illegal operation.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 276, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 403: API error: {'code': 30000, 'message': 'Illegal operation.', 'data': None}
+2025-05-09 04:29:07 - services.voice - ERROR - Error during speech generation: 500: API调用失败: 403: API error: {'code': 30000, 'message': 'Illegal operation.', 'data': None}
+2025-05-09 04:29:07 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音生成失败: 500: API调用失败: 403: API error: {'code': 30000, 'message': 'Illegal operation.', 'data': None}
+2025-05-09 04:33:35 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:35:24 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:35:25 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:35:45 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 04:35:45 - services.voice - INFO - Digital human info: {'id': 5, 'name': '小丽', 'gender': '女', 'age': 18, 'phone': '15626273815', 'description': '1', 'referenceAudio': 'http://localhost:8000/static/audio/ref_ca23ad5a-b396-4c16-8bb5-2d568eb2049b_1746729875.mp3', 'trainingAudio': 'http://localhost:8000/static/audio/train_30059ed1-53a8-4b4e-a49b-27bf185e4470_1746729873.mp3', 'avatar': 'http://localhost:8000/static/uploads/avatars/f56f55c1-a2d3-4263-88b9-318cc76f89ab_1746729871.png', 'video_path': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'patient_info_path': None, 'created_at': datetime.datetime(2025, 5, 9, 2, 44, 38), 'user_id': 2, 'voice_path': None}
+2025-05-09 04:35:45 - services.voice - INFO - Video path: speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc
+2025-05-09 04:35:45 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_765d12bd-8553-4e8b-84b9-f201c3b45ecb_1746736545.wav
+2025-05-09 04:35:45 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_765d12bd-8553-4e8b-84b9-f201c3b45ecb_1746736545.wav
+2025-05-09 04:35:49 - services.voice - WARNING - Failed to delete temporary file D:\PyCharm Project\CCF\app_latest\static\temp\temp_b56c808c-b5f4-45bb-b192-6437d6c24054.wav: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\PyCharm Project\\CCF\\app_latest\\static\\temp\\temp_b56c808c-b5f4-45bb-b192-6437d6c24054.wav'
+2025-05-09 04:35:49 - services.voice - INFO - Transcription completed: 你 今年 几岁 啦 你 叫 什么 名字 啊
+2025-05-09 04:35:49 - services.voice - INFO - Transcribed text: 你 今年 几岁 啦 你 叫 什么 名字 啊
+2025-05-09 04:35:49 - services.voice - INFO - Saving chat to database
+2025-05-09 04:35:49 - services.voice - INFO - Getting AI response
+2025-05-09 04:36:01 - services.voice - INFO - AI response: 哈哈，我是一款AI助手，没有真实的年龄和名字哦～不过你可以叫我 **DeepSeek Chat**，或者随便取个你喜欢的昵称！😊 我的知识截止到2023年12月，所以“年龄”大概可以算到那时候～有什么我可以帮你的吗？
+2025-05-09 04:36:01 - services.voice - INFO - Saving AI response to database
+2025-05-09 04:36:01 - services.voice - INFO - Request parameters: {'model': 'FunAudioLLM/CosyVoice2-0.5B', 'voice': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'input': '哈哈，我是一款AI助手，没有真实的年龄和名字哦～不过你可以叫我 **DeepSeek Chat**，或者随便取个你喜欢的昵称！😊 我的知识截止到2023年12月，所以“年龄”大概可以算到那时候～有什么我可以帮你的吗？', 'response_format': 'mp3'}
+2025-05-09 04:36:01 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 04:36:01 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 04:36:01 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 04:36:01 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "哈哈，我是一款AI助手，没有真实的年龄和名字哦～不过你可以叫我 **DeepSeek Chat**，或者随便取个你喜欢的昵称！😊 我的知识截止到2023年12月，所以“年龄”大概可以算到那时候～有什么我可以帮你的吗？", "response_format": "mp3"}
+2025-05-09 04:36:03 - services.voice - INFO - Response Status Code: 500
+2025-05-09 04:36:03 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 20:36:04 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 04:36:03 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 04:36:03 - services.voice - ERROR - Error Code: 50500
+2025-05-09 04:36:03 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 04:36:03 - services.voice - ERROR - Error Data: None
+2025-05-09 04:36:03 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 279, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:36:03 - services.voice - ERROR - Error during speech generation: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:36:03 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音生成失败: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:38:50 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:38:56 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:38:56 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:38:58 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:38:58 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:39:03 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:39:05 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:39:24 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 04:39:24 - services.voice - INFO - Digital human info: {'id': 5, 'name': '小丽', 'gender': '女', 'age': 18, 'phone': '15626273815', 'description': '1', 'referenceAudio': 'http://localhost:8000/static/audio/ref_ca23ad5a-b396-4c16-8bb5-2d568eb2049b_1746729875.mp3', 'trainingAudio': 'http://localhost:8000/static/audio/train_30059ed1-53a8-4b4e-a49b-27bf185e4470_1746729873.mp3', 'avatar': 'http://localhost:8000/static/uploads/avatars/f56f55c1-a2d3-4263-88b9-318cc76f89ab_1746729871.png', 'video_path': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'patient_info_path': None, 'created_at': datetime.datetime(2025, 5, 9, 2, 44, 38), 'user_id': 2, 'voice_path': None}
+2025-05-09 04:39:24 - services.voice - INFO - Video path: speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc
+2025-05-09 04:39:24 - services.voice - INFO - Video path length: 43
+2025-05-09 04:39:24 - services.voice - INFO - Video path format check: True
+2025-05-09 04:39:24 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_cfc37d65-e157-4669-a984-d58aa8d5f0bd_1746736764.wav
+2025-05-09 04:39:24 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_cfc37d65-e157-4669-a984-d58aa8d5f0bd_1746736764.wav
+2025-05-09 04:39:28 - services.voice - WARNING - Failed to delete temporary file D:\PyCharm Project\CCF\app_latest\static\temp\temp_7150fd79-8e05-442c-bd1d-bba5fc5957e4.wav: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\PyCharm Project\\CCF\\app_latest\\static\\temp\\temp_7150fd79-8e05-442c-bd1d-bba5fc5957e4.wav'
+2025-05-09 04:39:28 - services.voice - INFO - Transcription completed: 你 今年 几岁 了
+2025-05-09 04:39:28 - services.voice - INFO - Transcribed text: 你 今年 几岁 了
+2025-05-09 04:39:28 - services.voice - INFO - Saving chat to database
+2025-05-09 04:39:28 - services.voice - INFO - Getting AI response
+2025-05-09 04:39:37 - services.voice - INFO - AI response: 我是一个人工智能助手，没有实际的年龄或生日。不过，如果你好奇我的“技术年龄”——我的知识库最新更新是在2024年7月，你可以理解为我的“知识”停留在那个时间点。😊 
+
+需要帮忙解答其他问题吗？
+2025-05-09 04:39:37 - services.voice - INFO - Saving AI response to database
+2025-05-09 04:39:37 - services.voice - INFO - Original text length: 96
+2025-05-09 04:39:37 - services.voice - INFO - Original text: 我是一个人工智能助手，没有实际的年龄或生日。不过，如果你好奇我的“技术年龄”——我的知识库最新更新是在2024年7月，你可以理解为我的“知识”停留在那个时间点。😊 
+
+需要帮忙解答其他问题吗？
+2025-05-09 04:39:37 - services.voice - INFO - After removing markdown: 我是一个人工智能助手，没有实际的年龄或生日。不过，如果你好奇我的“技术年龄”——我的知识库最新更新是在2024年7月，你可以理解为我的“知识”停留在那个时间点。😊 
+
+需要帮忙解答其他问题吗？
+2025-05-09 04:39:37 - services.voice - INFO - After removing emoji: “”——20247“” 
+
+
+2025-05-09 04:39:37 - services.voice - INFO - Final processed text length: 11
+2025-05-09 04:39:37 - services.voice - INFO - Final processed text: “”——20247“”
+2025-05-09 04:39:37 - services.voice - INFO - Processed text for TTS: “”——20247“”
+2025-05-09 04:39:37 - services.voice - INFO - Request parameters: {'model': 'FunAudioLLM/CosyVoice2-0.5B', 'voice': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'input': '“”——20247“”', 'response_format': 'mp3'}
+2025-05-09 04:39:37 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 04:39:37 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 04:39:37 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 04:39:37 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "“”——20247“”", "response_format": "mp3"}
+2025-05-09 04:39:39 - services.voice - INFO - Response Status Code: 500
+2025-05-09 04:39:39 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 20:39:40 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 04:39:39 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 04:39:39 - services.voice - ERROR - Error Code: 50500
+2025-05-09 04:39:39 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 04:39:39 - services.voice - ERROR - Error Data: None
+2025-05-09 04:39:39 - services.voice - INFO - Retrying with simplified text...
+2025-05-09 04:39:40 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 298, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:39:40 - services.voice - ERROR - Error during speech generation: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:39:40 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音生成失败: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:41:57 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:42:16 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 04:42:16 - services.voice - INFO - Digital human info: {'id': 5, 'name': '小丽', 'gender': '女', 'age': 18, 'phone': '15626273815', 'description': '1', 'referenceAudio': 'http://localhost:8000/static/audio/ref_ca23ad5a-b396-4c16-8bb5-2d568eb2049b_1746729875.mp3', 'trainingAudio': 'http://localhost:8000/static/audio/train_30059ed1-53a8-4b4e-a49b-27bf185e4470_1746729873.mp3', 'avatar': 'http://localhost:8000/static/uploads/avatars/f56f55c1-a2d3-4263-88b9-318cc76f89ab_1746729871.png', 'video_path': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'patient_info_path': None, 'created_at': datetime.datetime(2025, 5, 9, 2, 44, 38), 'user_id': 2, 'voice_path': None}
+2025-05-09 04:42:16 - services.voice - INFO - Video path: speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc
+2025-05-09 04:42:16 - services.voice - INFO - Video path length: 43
+2025-05-09 04:42:16 - services.voice - INFO - Video path format check: True
+2025-05-09 04:42:16 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_d4d78bdc-a70c-4e8c-8f54-6307c184a1aa_1746736936.wav
+2025-05-09 04:42:16 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_d4d78bdc-a70c-4e8c-8f54-6307c184a1aa_1746736936.wav
+2025-05-09 04:42:20 - services.voice - WARNING - Failed to delete temporary file D:\PyCharm Project\CCF\app_latest\static\temp\temp_b9add680-1430-4df9-92d5-8b9ab2d514a2.wav: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\PyCharm Project\\CCF\\app_latest\\static\\temp\\temp_b9add680-1430-4df9-92d5-8b9ab2d514a2.wav'
+2025-05-09 04:42:20 - services.voice - INFO - Transcription completed: 你 今年 几岁 了 你 叫 什么 名字
+2025-05-09 04:42:20 - services.voice - INFO - Transcribed text: 你 今年 几岁 了 你 叫 什么 名字
+2025-05-09 04:42:20 - services.voice - INFO - Saving chat to database
+2025-05-09 04:42:20 - services.voice - INFO - Getting AI response
+2025-05-09 04:42:27 - services.voice - INFO - AI response: 我是 **DeepSeek Chat**，由深度求索公司创造。虽然我没有年龄，但我的知识截止到 **2024年7月**，你可以把我当作一个永远充满活力的AI助手！😊  
+
+至于名字，你可以叫我 **DeepSeek**，或者给我取个你喜欢的昵称～  
+
+有什么我可以帮你的吗？✨
+2025-05-09 04:42:27 - services.voice - INFO - Saving AI response to database
+2025-05-09 04:42:27 - services.voice - INFO - Original text length: 139
+2025-05-09 04:42:27 - services.voice - INFO - Original text: 我是 **DeepSeek Chat**，由深度求索公司创造。虽然我没有年龄，但我的知识截止到 **2024年7月**，你可以把我当作一个永远充满活力的AI助手！😊  
+
+至于名字，你可以叫我 **DeepSeek**，或者给我取个你喜欢的昵称～  
+
+有什么我可以帮你的吗？✨
+2025-05-09 04:42:27 - services.voice - INFO - After removing markdown: 我是 DeepSeek Chat，由深度求索公司创造。虽然我没有年龄，但我的知识截止到 2024年7月，你可以把我当作一个永远充满活力的AI助手！😊  
+
+至于名字，你可以叫我 DeepSeek，或者给我取个你喜欢的昵称～  
+
+有什么我可以帮你的吗？✨
+2025-05-09 04:42:27 - services.voice - INFO - After removing emoji:  DeepSeek Chat 20247AI  
+
+ DeepSeek  
+
+
+2025-05-09 04:42:27 - services.voice - INFO - Final processed text length: 30
+2025-05-09 04:42:27 - services.voice - INFO - Final processed text: DeepSeek Chat 20247AI DeepSeek
+2025-05-09 04:42:27 - services.voice - INFO - Processed text for TTS: DeepSeek Chat 20247AI DeepSeek
+2025-05-09 04:42:27 - services.voice - INFO - Request parameters: {'model': 'FunAudioLLM/CosyVoice2-0.5B', 'voice': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'input': 'DeepSeek Chat 20247AI DeepSeek', 'response_format': 'mp3'}
+2025-05-09 04:42:27 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 04:42:27 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 04:42:27 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 04:42:27 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "DeepSeek Chat 20247AI DeepSeek", "response_format": "mp3"}
+2025-05-09 04:42:29 - services.voice - INFO - Response Status Code: 500
+2025-05-09 04:42:29 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 20:42:29 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 04:42:29 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 04:42:29 - services.voice - ERROR - Error Code: 50500
+2025-05-09 04:42:29 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 04:42:29 - services.voice - ERROR - Error Data: None
+2025-05-09 04:42:29 - services.voice - INFO - Retrying with simplified text...
+2025-05-09 04:42:30 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 298, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:42:30 - services.voice - ERROR - Error during speech generation: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:42:30 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音生成失败: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:43:39 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:43:39 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:43:41 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:43:44 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:43:45 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 04:44:03 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 04:44:03 - services.voice - INFO - Digital human info: {'id': 5, 'name': '小丽', 'gender': '女', 'age': 18, 'phone': '15626273815', 'description': '1', 'referenceAudio': 'http://localhost:8000/static/audio/ref_ca23ad5a-b396-4c16-8bb5-2d568eb2049b_1746729875.mp3', 'trainingAudio': 'http://localhost:8000/static/audio/train_30059ed1-53a8-4b4e-a49b-27bf185e4470_1746729873.mp3', 'avatar': 'http://localhost:8000/static/uploads/avatars/f56f55c1-a2d3-4263-88b9-318cc76f89ab_1746729871.png', 'video_path': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'patient_info_path': None, 'created_at': datetime.datetime(2025, 5, 9, 2, 44, 38), 'user_id': 2, 'voice_path': None}
+2025-05-09 04:44:03 - services.voice - INFO - Video path: speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc
+2025-05-09 04:44:03 - services.voice - INFO - Video path length: 43
+2025-05-09 04:44:03 - services.voice - INFO - Video path format check: True
+2025-05-09 04:44:03 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_8fcbba3b-9066-40aa-a53c-575e5f4fa46d_1746737043.wav
+2025-05-09 04:44:03 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_8fcbba3b-9066-40aa-a53c-575e5f4fa46d_1746737043.wav
+2025-05-09 04:44:07 - services.voice - WARNING - Failed to delete temporary file D:\PyCharm Project\CCF\app_latest\static\temp\temp_cd482e3e-423b-4e63-bfe9-c1905d982680.wav: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\PyCharm Project\\CCF\\app_latest\\static\\temp\\temp_cd482e3e-423b-4e63-bfe9-c1905d982680.wav'
+2025-05-09 04:44:07 - services.voice - INFO - Transcription completed: 你 叫 什么 名字 今年 计算
+2025-05-09 04:44:07 - services.voice - INFO - Transcribed text: 你 叫 什么 名字 今年 计算
+2025-05-09 04:44:07 - services.voice - INFO - Saving chat to database
+2025-05-09 04:44:07 - services.voice - INFO - Getting AI response
+2025-05-09 04:44:15 - services.voice - INFO - AI response: 我是 **DeepSeek Chat**，由深度求索公司创造。你可以叫我 **DeepSeek** 或 **小深**！😊  
+
+至于“今年计算”，如果你是想问我的知识截止日期，我的最新知识更新到 **2024年7月**。不过，我没有年龄概念，也不会随时间增长变老哦～  
+
+有什么我可以帮你计算或解答的吗？📊🔢
+2025-05-09 04:44:15 - services.voice - INFO - Saving AI response to database
+2025-05-09 04:44:15 - services.voice - INFO - Original text length: 155
+2025-05-09 04:44:15 - services.voice - INFO - Original text: 我是 **DeepSeek Chat**，由深度求索公司创造。你可以叫我 **DeepSeek** 或 **小深**！😊  
+
+至于“今年计算”，如果你是想问我的知识截止日期，我的最新知识更新到 **2024年7月**。不过，我没有年龄概念，也不会随时间增长变老哦～  
+
+有什么我可以帮你计算或解答的吗？📊🔢
+2025-05-09 04:44:15 - services.voice - INFO - After removing markdown: 我是 DeepSeek Chat，由深度求索公司创造。你可以叫我 DeepSeek 或 小深！😊  
+
+至于“今年计算”，如果你是想问我的知识截止日期，我的最新知识更新到 2024年7月。不过，我没有年龄概念，也不会随时间增长变老哦～  
+
+有什么我可以帮你计算或解答的吗？📊🔢
+2025-05-09 04:44:15 - services.voice - INFO - After removing emoji:  DeepSeek Chat DeepSeek    
+
+“” 20247  
+
+
+2025-05-09 04:44:15 - services.voice - INFO - Final processed text length: 31
+2025-05-09 04:44:15 - services.voice - INFO - Final processed text: DeepSeek Chat DeepSeek “” 20247
+2025-05-09 04:44:15 - services.voice - INFO - Processed text for TTS: DeepSeek Chat DeepSeek “” 20247
+2025-05-09 04:44:15 - services.voice - INFO - Request parameters: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "DeepSeek Chat DeepSeek “” 20247", "response_format": "mp3"}
+2025-05-09 04:44:15 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 04:44:15 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 04:44:15 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 04:44:15 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "DeepSeek Chat DeepSeek “” 20247", "response_format": "mp3"}
+2025-05-09 04:44:17 - services.voice - INFO - Response Status Code: 500
+2025-05-09 04:44:17 - services.voice - INFO - Response Headers: {'date': 'Thu, 08 May 2025 20:44:17 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 04:44:17 - services.voice - INFO - Response Body: {"code":50500,"message":"Request processing has failed due to some unknown error.","data":null}
+2025-05-09 04:44:17 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 04:44:17 - services.voice - ERROR - Error Code: 50500
+2025-05-09 04:44:17 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 04:44:17 - services.voice - ERROR - Error Data: None
+2025-05-09 04:44:17 - services.voice - INFO - Retrying with simplified text...
+2025-05-09 04:44:17 - services.voice - INFO - Retry request parameters: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "DeepSeek Chat DeepSeek “” 20247", "response_format": "mp3"}
+2025-05-09 04:44:18 - services.voice - INFO - Retry Response Status Code: 500
+2025-05-09 04:44:18 - services.voice - INFO - Retry Response Headers: {'date': 'Thu, 08 May 2025 20:44:19 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 04:44:18 - services.voice - INFO - Retry Response Body: {"code":50500,"message":"Request processing has failed due to some unknown error.","data":null}
+2025-05-09 04:44:18 - services.voice - ERROR - Retry API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 04:44:18 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 308, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:44:18 - services.voice - ERROR - Error during speech generation: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 04:44:18 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音生成失败: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 08:14:14 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 08:14:15 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 08:17:44 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 08:17:44 - services.voice - INFO - Digital human info: {'id': 5, 'name': '小丽', 'gender': '女', 'age': 18, 'phone': '15626273815', 'description': '1', 'referenceAudio': 'http://localhost:8000/static/audio/ref_ca23ad5a-b396-4c16-8bb5-2d568eb2049b_1746729875.mp3', 'trainingAudio': 'http://localhost:8000/static/audio/train_30059ed1-53a8-4b4e-a49b-27bf185e4470_1746729873.mp3', 'avatar': 'http://localhost:8000/static/uploads/avatars/f56f55c1-a2d3-4263-88b9-318cc76f89ab_1746729871.png', 'video_path': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'patient_info_path': None, 'created_at': datetime.datetime(2025, 5, 9, 2, 44, 38), 'user_id': 2, 'voice_path': None}
+2025-05-09 08:17:44 - services.voice - INFO - Video path: speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc
+2025-05-09 08:17:44 - services.voice - INFO - Video path length: 43
+2025-05-09 08:17:44 - services.voice - INFO - Video path format check: True
+2025-05-09 08:17:44 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_24579bd8-0360-4826-ac3c-455b5180d9ee_1746749864.wav
+2025-05-09 08:17:44 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_24579bd8-0360-4826-ac3c-455b5180d9ee_1746749864.wav
+2025-05-09 08:17:47 - services.voice - WARNING - Failed to delete temporary file D:\PyCharm Project\CCF\app_latest\static\temp\temp_fd96db86-6291-4b68-a885-3b66358b64f0.wav: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\PyCharm Project\\CCF\\app_latest\\static\\temp\\temp_fd96db86-6291-4b68-a885-3b66358b64f0.wav'
+2025-05-09 08:17:47 - services.voice - INFO - Transcription completed: 你 叫 什么 名字 几年 年级 了
+2025-05-09 08:17:47 - services.voice - INFO - Transcribed text: 你 叫 什么 名字 几年 年级 了
+2025-05-09 08:17:47 - services.voice - INFO - Saving chat to database
+2025-05-09 08:17:47 - services.voice - INFO - Getting AI response
+2025-05-09 08:17:54 - services.voice - INFO - AI response: 我的名字是 **DeepSeek Chat**，由深度求索公司创造！😊  
+
+至于“几年年级”，我猜你可能想问我的“年龄”或“版本”？我是 **DeepSeek-V3**，知识截止到 **2024年7月**，但不像人类那样有年级或年龄的概念哦～  
+
+如果你是想问自己的年级（比如小学、初中、高中等），可以告诉我，我可以帮你解答学习相关的问题！📚✨
+2025-05-09 08:17:54 - services.voice - INFO - Saving AI response to database
+2025-05-09 08:17:54 - services.voice - INFO - Original text length: 174
+2025-05-09 08:17:54 - services.voice - INFO - Original text: 我的名字是 **DeepSeek Chat**，由深度求索公司创造！😊  
+
+至于“几年年级”，我猜你可能想问我的“年龄”或“版本”？我是 **DeepSeek-V3**，知识截止到 **2024年7月**，但不像人类那样有年级或年龄的概念哦～  
+
+如果你是想问自己的年级（比如小学、初中、高中等），可以告诉我，我可以帮你解答学习相关的问题！📚✨
+2025-05-09 08:17:54 - services.voice - INFO - After removing markdown: 我的名字是 DeepSeek Chat，由深度求索公司创造！😊  
+
+至于“几年年级”，我猜你可能想问我的“年龄”或“版本”？我是 DeepSeek-V3，知识截止到 2024年7月，但不像人类那样有年级或年龄的概念哦～  
+
+如果你是想问自己的年级（比如小学、初中、高中等），可以告诉我，我可以帮你解答学习相关的问题！📚✨
+2025-05-09 08:17:54 - services.voice - INFO - After removing emoji:  DeepSeek Chat  
+
+“”“”“” DeepSeek-V3 20247  
+
+
+2025-05-09 08:17:54 - services.voice - INFO - Final processed text length: 31
+2025-05-09 08:17:54 - services.voice - INFO - Final processed text: DeepSeek Chat  DeepSeekV3 20247
+2025-05-09 08:17:54 - services.voice - INFO - Processed text for TTS: DeepSeek Chat  DeepSeekV3 20247
+2025-05-09 08:17:54 - services.voice - INFO - Request parameters: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "DeepSeek Chat  DeepSeekV3 20247", "response_format": "mp3"}
+2025-05-09 08:17:54 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 08:17:54 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 08:17:54 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 08:17:54 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "DeepSeek Chat  DeepSeekV3 20247", "response_format": "mp3"}
+2025-05-09 08:17:56 - services.voice - INFO - Response Status Code: 500
+2025-05-09 08:17:56 - services.voice - INFO - Response Headers: {'date': 'Fri, 09 May 2025 00:17:56 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 08:17:56 - services.voice - INFO - Response Body: {"code":50500,"message":"Request processing has failed due to some unknown error.","data":null}
+2025-05-09 08:17:56 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 08:17:56 - services.voice - ERROR - Error Code: 50500
+2025-05-09 08:17:56 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 08:17:56 - services.voice - ERROR - Error Data: None
+2025-05-09 08:17:56 - services.voice - INFO - Retrying with simplified text...
+2025-05-09 08:17:56 - services.voice - INFO - Simplified text: DeepSeek Chat  DeepSeekV3 20247
+2025-05-09 08:17:56 - services.voice - INFO - Retry request parameters: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": "DeepSeek Chat  DeepSeekV3 20247", "response_format": "mp3"}
+2025-05-09 08:17:57 - services.voice - INFO - Retry Response Status Code: 500
+2025-05-09 08:17:57 - services.voice - INFO - Retry Response Headers: {'date': 'Fri, 09 May 2025 00:17:57 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 08:17:57 - services.voice - INFO - Retry Response Body: {"code":50500,"message":"Request processing has failed due to some unknown error.","data":null}
+2025-05-09 08:17:57 - services.voice - ERROR - Retry API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 08:17:57 - services.voice - ERROR - Unexpected error during API call: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+Traceback (most recent call last):
+  File "D:\PyCharm Project\CCF\app_latest\services\voice.py", line 308, in generate_audio
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 08:17:57 - services.voice - ERROR - Error during speech generation: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 08:17:57 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音生成失败: 500: API调用失败: 500: API error: {'code': 50500, 'message': 'Request processing has failed due to some unknown error.', 'data': None}
+2025-05-09 08:24:14 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 08:33:04 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 08:33:32 - services.voice - INFO - Starting audio generation for ID: 5
+2025-05-09 08:33:32 - services.voice - INFO - Digital human info: {'id': 5, 'name': '小丽', 'gender': '女', 'age': 18, 'phone': '15626273815', 'description': '1', 'referenceAudio': 'http://localhost:8000/static/audio/ref_ca23ad5a-b396-4c16-8bb5-2d568eb2049b_1746729875.mp3', 'trainingAudio': 'http://localhost:8000/static/audio/train_30059ed1-53a8-4b4e-a49b-27bf185e4470_1746729873.mp3', 'avatar': 'http://localhost:8000/static/uploads/avatars/f56f55c1-a2d3-4263-88b9-318cc76f89ab_1746729871.png', 'video_path': 'speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc', 'patient_info_path': None, 'created_at': datetime.datetime(2025, 5, 9, 2, 44, 38), 'user_id': 2, 'voice_path': None}
+2025-05-09 08:33:32 - services.voice - INFO - Video path: speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc
+2025-05-09 08:33:32 - services.voice - INFO - Video path length: 43
+2025-05-09 08:33:32 - services.voice - INFO - Video path format check: True
+2025-05-09 08:33:32 - services.voice - INFO - Transcribing audio file: http://localhost:8000/static/audio/record_97acd089-a013-4b5c-bdde-8c68b478b364_1746750812.wav
+2025-05-09 08:33:32 - services.voice - INFO - Starting audio transcription for file: http://localhost:8000/static/audio/record_97acd089-a013-4b5c-bdde-8c68b478b364_1746750812.wav
+2025-05-09 08:33:36 - services.voice - WARNING - Failed to delete temporary file D:\PyCharm Project\CCF\app_latest\static\temp\temp_9e2b95f8-0472-43eb-91f3-0c9241cf1aa4.wav: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'D:\\PyCharm Project\\CCF\\app_latest\\static\\temp\\temp_9e2b95f8-0472-43eb-91f3-0c9241cf1aa4.wav'
+2025-05-09 08:33:36 - services.voice - INFO - Transcription completed: 今天 广州 天气 怎么样
+2025-05-09 08:33:36 - services.voice - INFO - Transcribed text: 今天 广州 天气 怎么样
+2025-05-09 08:33:36 - services.voice - INFO - Saving chat to database
+2025-05-09 08:33:36 - services.voice - INFO - Getting AI response
+2025-05-09 08:33:46 - services.voice - INFO - AI response: 要获取广州今天的实时天气信息，你可以通过以下方式查询：
+
+1. **天气预报应用**：打开手机上的天气应用（如苹果天气、墨迹天气等），搜索“广州”即可查看实时天气、温度、湿度、降水概率等数据。  
+2. **搜索引擎**：在浏览器搜索“广州今天天气”，通常会直接显示即时天气卡片（如百度、谷歌）。  
+3. **气象网站**：访问中国天气网（[www.weather.com.cn](http://www.weather.com.cn)）或中央气象台官网查询。
+
+*由于我无法获取实时数据，建议你通过上述方式查看最新信息。如果需要帮助分析天气趋势或出行建议，可以告诉我具体需求哦！*  
+
+例如：今天广州可能有雷阵雨（参考近期气候），记得带伞🌂。
+2025-05-09 08:33:46 - services.voice - INFO - Saving AI response to database
+2025-05-09 08:33:46 - services.voice - INFO - Original text length: 323
+2025-05-09 08:33:46 - services.voice - INFO - Original text: 要获取广州今天的实时天气信息，你可以通过以下方式查询：
+
+1. **天气预报应用**：打开手机上的天气应用（如苹果天气、墨迹天气等），搜索“广州”即可查看实时天气、温度、湿度、降水概率等数据。  
+2. **搜索引擎**：在浏览器搜索“广州今天天气”，通常会直接显示即时天气卡片（如百度、谷歌）。  
+3. **气象网站**：访问中国天气网（[www.weather.com.cn](http://www.weather.com.cn)）或中央气象台官网查询。
+
+*由于我无法获取实时数据，建议你通过上述方式查看最新信息。如果需要帮助分析天气趋势或出行建议，可以告诉我具体需求哦！*  
+
+例如：今天广州可能有雷阵雨（参考近期气候），记得带伞🌂。
+2025-05-09 08:33:46 - services.voice - INFO - After removing markdown: 要获取广州今天的实时天气信息，你可以通过以下方式查询：
+
+1. 天气预报应用：打开手机上的天气应用（如苹果天气、墨迹天气等），搜索“广州”即可查看实时天气、温度、湿度、降水概率等数据。  
+2. 搜索引擎：在浏览器搜索“广州今天天气”，通常会直接显示即时天气卡片（如百度、谷歌）。  
+3. 气象网站：访问中国天气网（[www.weather.com.cn](http://www.weather.com.cn)）或中央气象台官网查询。
+
+由于我无法获取实时数据，建议你通过上述方式查看最新信息。如果需要帮助分析天气趋势或出行建议，可以告诉我具体需求哦！  
+
+例如：今天广州可能有雷阵雨（参考近期气候），记得带伞🌂。
+2025-05-09 08:33:46 - services.voice - INFO - After removing emoji: 
+
+1. “”  
+2. “”  
+3. [www.weather.com.cn](http://www.weather.com.cn)
+
+  
+
+
+2025-05-09 08:33:46 - services.voice - INFO - Final processed text length: 46
+2025-05-09 08:33:46 - services.voice - INFO - Final processed text: . . . www.weather.com.cnhttpwww.weather.com.cn
+2025-05-09 08:33:46 - services.voice - INFO - Processed text for TTS: . . . www.weather.com.cnhttpwww.weather.com.cn
+2025-05-09 08:33:46 - services.voice - INFO - Request parameters: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": ". . . www.weather.com.cnhttpwww.weather.com.cn", "response_format": "mp3"}
+2025-05-09 08:33:46 - services.voice - INFO - Making direct API call with httpx...
+2025-05-09 08:33:46 - services.voice - INFO - Request URL: https://api.siliconflow.cn/v1/audio/speech
+2025-05-09 08:33:46 - services.voice - INFO - Request Headers: {'Authorization': 'Bearer sk-swldh...'}
+2025-05-09 08:33:46 - services.voice - INFO - Request Body: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": ". . . www.weather.com.cnhttpwww.weather.com.cn", "response_format": "mp3"}
+2025-05-09 08:33:48 - services.voice - INFO - Response Status Code: 500
+2025-05-09 08:33:48 - services.voice - INFO - Response Headers: {'date': 'Fri, 09 May 2025 00:33:48 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 08:33:48 - services.voice - INFO - Response Body: {"code":50500,"message":"Request processing has failed due to some unknown error.","data":null}
+2025-05-09 08:33:48 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 08:33:48 - services.voice - ERROR - Error Code: 50500
+2025-05-09 08:33:48 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 08:33:48 - services.voice - ERROR - Error Data: None
+2025-05-09 08:33:48 - services.voice - INFO - Retrying after 50500 error, attempt 2/3
+2025-05-09 08:33:48 - services.voice - INFO - Retry attempt 1 with simplified text...
+2025-05-09 08:33:48 - services.voice - INFO - Simplified text: . . . www.weather.com.cnhttpww...
+2025-05-09 08:33:48 - services.voice - INFO - Retry request parameters: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": ". . . www.weather.com.cnhttpww...", "response_format": "mp3"}
+2025-05-09 08:33:48 - services.voice - INFO - Waiting 2 seconds before retry...
+2025-05-09 08:33:51 - services.voice - INFO - Response Status Code: 500
+2025-05-09 08:33:51 - services.voice - INFO - Response Headers: {'date': 'Fri, 09 May 2025 00:33:51 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 08:33:51 - services.voice - INFO - Response Body: {"code":50500,"message":"Request processing has failed due to some unknown error.","data":null}
+2025-05-09 08:33:51 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 08:33:51 - services.voice - ERROR - Error Code: 50500
+2025-05-09 08:33:51 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 08:33:51 - services.voice - ERROR - Error Data: None
+2025-05-09 08:33:51 - services.voice - INFO - Retrying after 50500 error, attempt 3/3
+2025-05-09 08:33:51 - services.voice - INFO - Retry attempt 2 with simplified text...
+2025-05-09 08:33:51 - services.voice - INFO - Simplified text: . . . www.weather.com.cnhttpww...
+2025-05-09 08:33:51 - services.voice - INFO - Retry request parameters: {"model": "FunAudioLLM/CosyVoice2-0.5B", "voice": "speech:dh_5:tk1duirxtm:oczobtboslxrvrvulccc", "input": ". . . www.weather.com.cnhttpww...", "response_format": "mp3"}
+2025-05-09 08:33:51 - services.voice - INFO - Waiting 4 seconds before retry...
+2025-05-09 08:33:56 - services.voice - INFO - Response Status Code: 500
+2025-05-09 08:33:56 - services.voice - INFO - Response Headers: {'date': 'Fri, 09 May 2025 00:33:56 GMT', 'content-type': 'application/json; charset=utf-8', 'content-length': '95', 'connection': 'keep-alive'}
+2025-05-09 08:33:56 - services.voice - INFO - Response Body: {"code":50500,"message":"Request processing has failed due to some unknown error.","data":null}
+2025-05-09 08:33:56 - services.voice - ERROR - API Error Response: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 08:33:56 - services.voice - ERROR - Error Code: 50500
+2025-05-09 08:33:56 - services.voice - ERROR - Error Message: Request processing has failed due to some unknown error.
+2025-05-09 08:33:56 - services.voice - ERROR - Error Data: None
+2025-05-09 08:33:56 - services.voice - ERROR - Error during speech generation: 500: 多次重试后仍然失败: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 08:33:56 - services.voice - ERROR - HTTP Exception in generate_audio: 500: 语音生成失败: 500: 多次重试后仍然失败: {"code": 50500, "message": "Request processing has failed due to some unknown error.", "data": null}
+2025-05-09 08:58:56 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 08:59:18 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 08:59:18 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 08:59:58 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 08:59:58 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 08:59:59 - services.voice - ERROR - Training API Error: {'code': 20015, 'message': 'The parameter is invalid. Please check again.', 'data': None}
+2025-05-09 09:00:34 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:00:34 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:00:34 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:00:34 - services.voice - INFO - Generating speech with model: fishaudio/fish-speech-1.5, voice: {'uri': 'speech:test_voice:tk1duirxtm:ixeuhdexlbmgopdqkgos'}
+2025-05-09 09:00:34 - services.voice - INFO - Request parameters: {"model": "fishaudio/fish-speech-1.5", "voice": {"uri": "speech:test_voice:tk1duirxtm:ixeuhdexlbmgopdqkgos"}, "input": "你好，这是一个测试。"}
+2025-05-09 09:00:35 - services.voice - ERROR - Speech Generation API Error: {'code': 20015, 'message': 'The parameter is invalid. Please check again.', 'data': None}
+2025-05-09 09:00:35 - services.voice - ERROR - Error during speech generation: 400: 语音生成失败: The parameter is invalid. Please check again.
+2025-05-09 09:01:12 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:01:12 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:01:13 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:01:13 - services.voice - INFO - Generating speech with model: fishaudio/fish-speech-1.5, voice: speech:test_voice:tk1duirxtm:tjajaetjqkbeamuoctee
+2025-05-09 09:01:13 - services.voice - INFO - Request parameters: {"model": "fishaudio/fish-speech-1.5", "voice": "speech:test_voice:tk1duirxtm:tjajaetjqkbeamuoctee", "input": "你好，这是一个测试。"}
+2025-05-09 09:03:56 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:03:56 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:03:56 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:03:56 - services.voice - INFO - Generating speech with model: fishaudio/fish-speech-1.5, voice: speech:test_voice:tk1duirxtm:jupewrkzodvqpgboyqzb
+2025-05-09 09:03:56 - services.voice - INFO - Request parameters: {"model": "fishaudio/fish-speech-1.5", "voice": "speech:test_voice:tk1duirxtm:jupewrkzodvqpgboyqzb", "input": "你好，这是一个测试。"}
+2025-05-09 09:04:50 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:04:50 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:04:52 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:04:52 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:04:59 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:05:00 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:09:59 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:12:05 - services.voice - INFO - Generating speech with model: fishaudio/fish-speech-1.5, voice: speech:test_voice:tk1duirxtm:jupewrkzodvqpgboyqzb
+2025-05-09 09:12:05 - services.voice - INFO - Request parameters: {"model": "fishaudio/fish-speech-1.5", "voice": "speech:test_voice:tk1duirxtm:jupewrkzodvqpgboyqzb", "input": "你好，这是一个测试。今天天气真不错，阳光明媚，让人心情愉悦。"}
+2025-05-09 09:12:09 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:15:00 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 09:15:32 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 21:18:08 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
+2025-05-09 21:18:09 - services.voice - INFO - VoiceService initialized with API URL: https://api.siliconflow.cn/v1
