@@ -4,8 +4,12 @@ from model.models import db
 
 #数据库账号信息
 class User():
-    def find_user(data):
-        Result = modelsUser.query.filter_by(username=data['username']).first()
+    def findByusername(username):
+        Result = modelsUser.query.filter_by(username=username).first()
+        return Result
+
+    def findByemail(email):
+        Result = modelsUser.query.filter_by(email=email).first()
         return Result
 
     #注册增加账号信息

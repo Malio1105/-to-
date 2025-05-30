@@ -2,7 +2,7 @@ from model.models import Image as modelsImage
 from model.models import db
 
 
-#数据库账号信息
+#数据库信息
 class Image():
     def add_image(image):
         db.session.add(image)
@@ -15,4 +15,7 @@ class Image():
 
     def find_imageUrl(imageId):
         img = modelsImage.query.filter_by(id=imageId).first()
-        return img.image
+        if img is None:
+            return None
+        else:
+            return img.image

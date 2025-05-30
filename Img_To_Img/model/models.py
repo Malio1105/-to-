@@ -1,6 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-from sqlalchemy.dialects.postgresql import ARRAY
 
 db = SQLAlchemy()
 
@@ -9,13 +8,15 @@ class User(db.Model):
     __tablename__ = 'user'
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    username = db.Column(db.String(20), unique= False, nullable=False)
-    password = db.Column(db.String(32), nullable=False)
-    nickname = db.Column(db.String(10), default='')
-    email = db.Column(db.String(128), default='')
-    user_pic = db.Column(db.String(256), default='')
-    create_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    update_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
+    username = db.Column(db.String(20), unique=True, nullable=False, comment="用户名")
+    password = db.Column(db.String(128), nullable=False,comment="密码")
+    nickname = db.Column(db.String(10), nullable=True, comment="昵称")
+    email = db.Column(db.String(128), unique=True,nullable=True,comment="邮箱")
+    phone = db.Column(db.String(11), unique=True, comment="电话")
+    role=db.Column(db.Integer, default=0,nullable=False,comment="身份")  #0表示使用用户，1表示管理员
+    user_pic = db.Column(db.String(256), comment="用户头像")
+    create_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow,comment="创建时间")
+    update_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow,comment="更新时间")
 
     records=db.relationship('Record',backref='creator',lazy=True)
 
@@ -23,10 +24,10 @@ class Record(db.Model):
     __tablename__='record'
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    create_user = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)  #这个记录是由id为user.id的用户产生的
-    user_image=db.Column(db.String(256), nullable=False) #用户发出的图片
-    create_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    update_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
+    create_user = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False, comment="创建者")  #这个记录是由id为user.id的用户产生的
+    user_image=db.Column(db.String(256), nullable=False, comment="用户发出的图片") #用户发出的图片
+    create_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow,comment="创建时间")
+    update_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow,comment="修改时间")
 
     images = db.relationship("Image", secondary="record_to_image", backref="records")
 
@@ -43,7 +44,7 @@ class Image(db.Model):
     __tablename__='image'
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    image_name=db.Column(db.String(32), nullable=True)
-    image = db.Column(db.String(256), nullable=False, unique=True)  #图片的URL长度不能超过1024
-    create_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    update_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow)
+    image_name=db.Column(db.String(32), nullable=True, comment="图片名")
+    image = db.Column(db.String(256), nullable=False, unique=True, comment="图片")  #图片的URL长度不能超过256
+    create_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, comment="创建时间")
+    update_time = db.Column(db.DateTime, nullable=False, default=datetime.utcnow, onupdate=datetime.utcnow, comment="更新时间")

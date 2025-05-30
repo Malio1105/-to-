@@ -1,17 +1,9 @@
 import numpy as np
 from PIL import Image
 import torch
-import torch.nn as nn
-from torchvision.models import resnet50, ResNet50_Weights
-from torchvision.models import ResNet50_Weights
 
 # API需要的flask框架
-from flask import Flask, request, jsonify,session
-from flask_cors import CORS
-from werkzeug.utils import secure_filename  # 确保导入安全文件名处理
 import utils.preprocess as pre
-import json
-import timedelta
 import os
 
 os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"

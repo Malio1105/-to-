@@ -10,7 +10,7 @@ import torch
 def download_image(url: str) -> Image.Image:
     #相当于获得许可证
     ca_bundle_path = certifi.where()
-    response = requests.get(url, verify = ca_bundle_path)
+    requests.get(url, verify = ca_bundle_path)
 
     """从URL下载图片并返回PIL图像对象"""
     response = requests.get(url, timeout=10)
