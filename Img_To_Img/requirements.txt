@@ -1,9 +1,0 @@
-numpy
-faiss-cpu
-Werkzeug
-flask
-dlask_migrate
-Pillow
-torchvision
-torch
-certifi
