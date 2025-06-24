@@ -9,6 +9,9 @@
 
 后端.venv文件，myvenv，github不支持上传，所以环境你们自己配吧
 
+前端文件在https://github.com/Malio1105/-to-/tree/Img_To_Img-Vue3
+
+不知道为啥变到那里了，前端文件npm没有上传，自己去配
 
 打开数据库、后端、前端（其中前端可以批处理文件一键启动）
 
